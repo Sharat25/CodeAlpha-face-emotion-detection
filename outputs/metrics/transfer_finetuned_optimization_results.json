@@ -1,0 +1,29 @@
+{
+  "n_accuracy_samples": 2000,
+  "n_latency_runs": 100,
+  "results": {
+    "keras_float32": {
+      "accuracy": 0.5835,
+      "latency_ms": 192.11561679840088,
+      "size_bytes": 10350876
+    },
+    "tflite_float32": {
+      "accuracy": 0.5835,
+      "latency_ms": 6.060202121734619,
+      "size_bytes": 10188064,
+      "file": "C:\\Users\\Vishal B\\Desktop\\Facial-Recognition-System-20260806T115531Z-1-001\\Facial-Recognition-System\\saved_models\\transfer_finetuned_tflite_float32.tflite"
+    },
+    "tflite_dynamic_range_int8": {
+      "accuracy": 0.585,
+      "latency_ms": 30.85761547088623,
+      "size_bytes": 2844552,
+      "file": "C:\\Users\\Vishal B\\Desktop\\Facial-Recognition-System-20260806T115531Z-1-001\\Facial-Recognition-System\\saved_models\\transfer_finetuned_tflite_dynamic_range_int8.tflite"
+    },
+    "tflite_full_int8": {
+      "accuracy": 0.5635,
+      "latency_ms": 3.922936916351319,
+      "size_bytes": 3050992,
+      "file": "C:\\Users\\Vishal B\\Desktop\\Facial-Recognition-System-20260806T115531Z-1-001\\Facial-Recognition-System\\saved_models\\transfer_finetuned_tflite_full_int8.tflite"
+    }
+  }
+}

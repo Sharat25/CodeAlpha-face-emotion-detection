@@ -1,0 +1,29 @@
+{
+  "n_accuracy_samples": 2000,
+  "n_latency_runs": 100,
+  "results": {
+    "keras_float32": {
+      "accuracy": 0.5035,
+      "latency_ms": 55.42820692062378,
+      "size_bytes": 2470044
+    },
+    "tflite_float32": {
+      "accuracy": 0.5035,
+      "latency_ms": 2.368292808532715,
+      "size_bytes": 2469976,
+      "file": "C:\\Labmentix Internship Projects\\Facial-Emotion-Recognition-System\\saved_models\\scratch_tflite_float32.tflite"
+    },
+    "tflite_dynamic_range_int8": {
+      "accuracy": 0.506,
+      "latency_ms": 0.5880546569824219,
+      "size_bytes": 639632,
+      "file": "C:\\Labmentix Internship Projects\\Facial-Emotion-Recognition-System\\saved_models\\scratch_tflite_dynamic_range_int8.tflite"
+    },
+    "tflite_full_int8": {
+      "accuracy": 0.5035,
+      "latency_ms": 0.511622428894043,
+      "size_bytes": 647720,
+      "file": "C:\\Labmentix Internship Projects\\Facial-Emotion-Recognition-System\\saved_models\\scratch_tflite_full_int8.tflite"
+    }
+  }
+}

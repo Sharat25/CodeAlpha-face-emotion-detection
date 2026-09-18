@@ -1,0 +1,10 @@
+{
+  "model": "transfer_mobilenetv2_finetune",
+  "epochs_ran": 40,
+  "epochs_requested": 60,
+  "best_val_accuracy": 0.5898328423500061,
+  "training_seconds_this_invocation": 9089.63069152832,
+  "batch_size": 64,
+  "lr": 1e-05,
+  "checkpoint": "C:\\Labmentix Internship Projects\\Facial-Emotion-Recognition-System\\saved_models\\transfer_finetune_best.keras"
+}

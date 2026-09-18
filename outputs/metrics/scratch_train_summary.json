@@ -1,0 +1,12 @@
+{
+  "model": "scratch_cnn",
+  "epochs_ran": 40,
+  "epochs_requested": 40,
+  "best_val_accuracy": 0.5295960903167725,
+  "final_train_accuracy": 0.4619731307029724,
+  "training_seconds": 4627.684697628021,
+  "batch_size": 64,
+  "initial_lr": 0.001,
+  "class_weighted": true,
+  "checkpoint": "C:\\Labmentix Internship Projects\\Facial-Emotion-Recognition-System\\saved_models\\scratch_best.keras"
+}

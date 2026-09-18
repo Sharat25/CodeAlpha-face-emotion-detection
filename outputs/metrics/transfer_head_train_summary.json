@@ -1,0 +1,10 @@
+{
+  "model": "transfer_mobilenetv2_head",
+  "epochs_ran": 15,
+  "epochs_requested": 15,
+  "best_val_accuracy": 0.46274372935295105,
+  "training_seconds_this_invocation": 3214.9856050014496,
+  "batch_size": 64,
+  "lr": 0.001,
+  "checkpoint": "C:\\Labmentix Internship Projects\\Facial-Emotion-Recognition-System\\saved_models\\transfer_head_best.keras"
+}

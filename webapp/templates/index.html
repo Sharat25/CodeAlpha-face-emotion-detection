@@ -1,0 +1,243 @@
+<!doctype html>
+
+<html lang = "en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DeepFER — Facial Emotion Recognition</title>
+
+    <link rel = "preconnect" href = "https://fonts.googleapis.com" />
+
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
+
+    <link
+
+      href = "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+
+      rel = "stylesheet"
+
+    />
+
+    <link
+
+      rel = "stylesheet"
+
+      href = "{{ url_for('static', filename='style.css') }}"
+
+    />
+
+  </head>
+
+  <body>
+
+    <header class = "topbar">
+
+      <div class = "topbar__mark">
+
+        <span>DeepFER</span>
+
+      </div>
+
+      <div class = "topbar__meta">
+
+        <span
+
+          >MODEL&nbsp;<strong id = "model-kind"
+
+            >{{ model_kind|upper }}</strong
+
+          ></span
+
+        >
+
+        <span class = "sep">/</span>
+
+        <span>7 CLASSES</span>
+
+      </div>
+
+    </header>
+
+    <main class = "layout">
+
+      <section class = "viewfinder-panel">
+
+        <div class = "panel-label">Input</div>
+
+        <div class = "mode-toggle" role = "tablist">
+
+          <button
+
+            class = "mode-btn is-active"
+
+            data-mode = "upload"
+
+            role = "tab"
+
+            aria-selected = "true"
+
+          >
+
+            Upload photo
+
+          </button>
+
+          <button
+
+            class = "mode-btn"
+
+            data-mode = "camera"
+
+            role = "tab"
+
+            aria-selected = "false"
+
+          >
+
+            Live camera
+
+          </button>
+
+        </div>
+
+        <div class = "viewfinder" id="viewfinder">
+
+          <span class = "corner corner--tl"></span>
+
+          <span class = "corner corner--tr"></span>
+
+          <span class = "corner corner--bl"></span>
+
+          <span class = "corner corner--br"></span>
+
+          <img
+
+            id = "preview-img"
+
+            class = "viewfinder__media"
+
+            hidden
+
+            alt = "Uploaded photo preview"
+
+          />
+
+          <video
+
+            id = "camera-video"
+
+            class = "viewfinder__media"
+
+            autoplay
+
+            muted
+
+            playsinline
+
+            hidden
+
+          ></video>
+
+          <canvas id = "overlay-canvas" class="viewfinder__overlay"></canvas>
+
+          <div id = "empty-state" class = "empty-state">
+
+            <p>Drop a photo here, or click to browse</p>
+
+            <p class = "empty-state__sub">
+
+              JPG or PNG — a face is detected automatically
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <input type = "file" id = "file-input" accept = "image/*" hidden />
+
+        <div class="controls">
+
+          <button id = "camera-start" class = "btn" hidden>Start camera</button>
+
+          <button id = "camera-stop" class = "btn btn--ghost" hidden>
+
+            Stop camera
+
+          </button>
+
+          <span id = "fps-readout" class = "fps-readout" hidden
+
+            >— fps · — ms</span
+
+          >
+
+        </div>
+
+      </section>
+
+      <section class = "results-panel">
+
+        <div class = "panel-label">Reading</div>
+
+        <div class = "primary-reading">
+
+          <div class = "primary-reading__emoji" id = "primary-emoji">—</div>
+
+          <div class = "primary-reading__text">
+
+            <div class = "primary-reading__label" id= "primary-label">
+
+              Awaiting input
+
+            </div>
+
+            <div class = "primary-reading__confidence" id = "primary-confidence">
+
+              &nbsp;
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="spectrum" id="spectrum">
+
+          <!-- JS populates one .spectrum__row per emotion class -->
+
+        </div>
+
+        <div class = "face-count" id="face-count"></div>
+
+      </section>
+
+    </main>
+
+    <footer class = "footer">
+
+      <span
+
+        >DeepFER · CNN-from-scratch &amp; MobileNetV2 transfer learning on
+
+        FER-2013</span
+
+      >
+
+    </footer>
+
+    <script>
+
+      window.__DEEPFER_CLASSES__ = {{ class_names|tojson }};
+
+    </script>
+
+    <script src = "{{ url_for('static', filename='app.js') }}"></script>
+
+  </body>
+
+</html>

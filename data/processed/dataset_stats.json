@@ -1,0 +1,55 @@
+{
+  "class_names": [
+    "angry",
+    "disgust",
+    "fear",
+    "happy",
+    "neutral",
+    "sad",
+    "surprise"
+  ],
+  "val_fraction_of_train": 0.1,
+  "seed": 42,
+  "counts": {
+    "angry": {
+      "train": 3595,
+      "val": 400,
+      "test": 958
+    },
+    "disgust": {
+      "train": 392,
+      "val": 44,
+      "test": 111
+    },
+    "fear": {
+      "train": 3687,
+      "val": 410,
+      "test": 1024
+    },
+    "happy": {
+      "train": 6493,
+      "val": 722,
+      "test": 1774
+    },
+    "neutral": {
+      "train": 4469,
+      "val": 496,
+      "test": 1233
+    },
+    "sad": {
+      "train": 4347,
+      "val": 483,
+      "test": 1247
+    },
+    "surprise": {
+      "train": 2854,
+      "val": 317,
+      "test": 831
+    }
+  },
+  "totals": {
+    "train": 25837,
+    "val": 2872,
+    "test": 7178
+  }
+}
