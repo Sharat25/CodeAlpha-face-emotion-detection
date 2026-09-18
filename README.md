@@ -332,41 +332,11 @@ All paths, class definitions, and hyperparameters are centralized in `deepfer/co
 
 ---
 
-# 👨‍💻 Author
-
-<div align="center">
-
-# **Vishal B**
-
-### 🚀 AI & Machine Learning Enthusiast | Full Stack Developer | B.Sc. Computer Science Student
-
-<p align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vishal-b-7956a037b/)
-[![GitHub](https://img.shields.io/badge/GitHub-b4645857--ai-181717?style=for-the-badge&logo=github)](https://github.com/b4645857-ai)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://portfolio-design-4gnv2gpqu-b4645857-ais-projects.vercel.app/)
-[![Email](https://img.shields.io/badge/Email-b4645857%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:b4645857@gmail.com)
-
-</p>
 
 </div>
 
 ---
 
-## 🌟 About Me
-
-🎓 B.Sc. Computer Science Student at **SRM Institute of Science and Technology**
-
-💡 Passionate about building intelligent AI systems, full-stack web applications, and real-world software solutions.
-
-### 🔬 Areas of Interest
-
-- 🤖 Artificial Intelligence
-- 🧠 Machine Learning
-- 👁️ Computer Vision
-- 🕸️ Full Stack Web Development
-- 📊 Data Science
-- 🚀 Open Source
 
 ### 🛠️ Tech Stack
 
@@ -384,16 +354,7 @@ All paths, class definitions, and hyperparameters are centralized in `deepfer/co
 
 ---
 
-## 🤝 Let's Connect
 
-I'm always excited to collaborate on AI, Machine Learning, Computer Vision, and Web Development projects.
-
-Feel free to connect with me:
-
-- 💼 LinkedIn → https://www.linkedin.com/in/vishal-b-7956a037b/
-- 💻 GitHub → https://github.com/b4645857-ai
-- 🌐 Portfolio → https://portfolio-design-4gnv2gpqu-b4645857-ais-projects.vercel.app/
-- 📧 Email → b4645857@gmail.com
 
 ---
 
